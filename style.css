@@ -8,7 +8,6 @@ body {
     width: 100%;
 }
 .i-am {
-    width: calc(114px + 1.8vw);
     color: orange;
 }
 .port-wrapper {
@@ -85,7 +84,6 @@ a {
 
 @media(min-width: 576px) {
     body {font-size: 21px;}
-    .i-am {width: 130px;}
     td {padding: 7px 10px;}
     .links {width: 25%;}
 }
@@ -94,10 +92,8 @@ a {
         font-size: 22.5px;
         margin: 10px 5%;
     }
-    .i-am {width: 140px;}
 }
 @media(min-width: 992px) {
     body {font-size: 24.5px;}
-    .i-am {width: 150px;}
     .tel {letter-spacing: 2.5px;}
 }
