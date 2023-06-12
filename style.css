@@ -2,6 +2,23 @@ body {
     background-color: black;
     font-size: calc(10px + 1.8vw);
 }
+.matrix {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: rgb(24, 195, 24);
+    font-size: 15px;
+    display: flex;
+    overflow-y: hidden;
+    animation: vanishing 3s 1s ease;
+}
+.m-column {
+    margin: 0 7px;
+    width: 16px;
+}
 .head-wrapper {
     display: inline-flex;
     justify-content: space-around;
@@ -89,6 +106,11 @@ td a {
     max-height: 41px;
     border-radius: 9px;
     margin: 0 3px;
+}
+
+@keyframes vanishing {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
 }
 
 @media(min-width: 576px) {
