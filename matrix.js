@@ -3,7 +3,7 @@ const matrix = document.querySelector('.matrix')
 let i = 0
 while(i <= window.innerWidth / 15) {
     let div = document.createElement('div')
-    div.className = 'm-column'
+    div.className = 'matrix-column'
     matrix.append(div)
     div.textContent = Math.round(Math.random())
     let n = 0
