@@ -24,6 +24,18 @@ function showLetters() {
 
 hideLetters()
 
+const ths = [
+    'Description',
+    'Links',
+    'Technologies'
+]
+const tr1 = document.querySelector('tr')
+ths.forEach(e => {
+    const th = document.createElement('th')
+    th.textContent = e
+    tr1.append(th)
+})
+
 const messengers = [
     {picture: 'viber.png', alt: 'Viber'},
     {picture: 'telegram.png', alt: 'Telegram'},

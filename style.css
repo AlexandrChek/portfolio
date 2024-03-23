@@ -1,7 +1,7 @@
 :root {
     --toxic-green: rgb(39, 235, 13);
     --light-green: rgb(128, 253, 97);
-    --main-f-size: calc(10.5px + 1.25vw);
+    --main-f-size: clamp(14.5px, calc(10.5px + 1.25vw), 24.5px);
 }
 
 body {
@@ -91,6 +91,7 @@ a:hover p {
 }
 .links p {
     margin: 0;
+    text-align: center;
 }
 .several-items a {
     display: block;
@@ -111,6 +112,10 @@ a:hover #earth {
 .tel-wrapper, .nick-tg, .e-mail, .linkedin {
     color: rgb(252, 252, 245);
     text-align: center;
+}
+.tel {
+    letter-spacing: calc(1px + .05vw);
+    margin-bottom: 2px;
 }
 .messengers {
     display: inline-flex;
@@ -136,12 +141,4 @@ a:hover #earth {
 }
 @media(min-width: 768px) {
     body {margin: 10px 5%;}
-}
-@media(min-width: 992px) {
-    body {font-size: 24.5px;}
-    .port-wrapper {width: 147px;}
-    a:hover img, a:hover p {
-        box-shadow: 0 0 16px 8px var(--light-green);
-    }
-    .tel {letter-spacing: 2.5px;}
 }
