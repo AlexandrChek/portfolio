@@ -18,8 +18,7 @@ body {
     color: rgb(24, 195, 24);
     font-size: 15px;
     display: flex;
-    overflow-y: hidden;
-    animation: vanishing 3s 1s ease;
+    overflow: hidden;
 }
 .matrix-column {
     margin: 0 7px;
@@ -128,11 +127,6 @@ a:hover #earth {
     max-height: 41px;
     border-radius: 9px;
     margin: 0 3px;
-}
-
-@keyframes vanishing {
-    0% {opacity: 1;}
-    100% {opacity: 0;}
 }
 
 @media(min-width: 576px) {

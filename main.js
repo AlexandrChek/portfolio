@@ -1,3 +1,5 @@
+//ANIMATION
+
 const port = ['P', 'o', 'r', 't', 'f', 'o', 'l', 'i', 'o']
 const portWrapper = document.querySelector('.port-wrapper')
 portWrapper.innerHTML = port.map(e => `<p class="letters">${e}</p>`)
@@ -15,7 +17,7 @@ function showLetters() {
     let timer = setInterval(() => {
         letters[i].style.display = 'block'
         i++
-        if(i >= letters.length) {
+        if (i >= letters.length) {
             clearInterval(timer)
             setTimeout(hideLetters, 500)
         }
@@ -23,6 +25,8 @@ function showLetters() {
 }
 
 hideLetters()
+
+//TABLE HEADER
 
 const ths = [
     'Description',
@@ -35,6 +39,13 @@ ths.forEach(e => {
     th.textContent = e
     tr1.append(th)
 })
+
+//SKILLS
+
+const skills = document.querySelector('.skills')
+skills.textContent = 'I have system thinking, strong analytical skills, good ability to read other programmer`s code and never give up in the face of challenging tasks. I can quickly adapt to new software and learn new technologies.'
+
+//MESSENGERS
 
 const messengers = [
     {picture: 'viber.png', alt: 'Viber'},
