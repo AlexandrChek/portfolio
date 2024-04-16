@@ -49,7 +49,7 @@ tr:last-child td:last-child {
     border-bottom-right-radius: 5px;
 }
 td:first-child::first-letter {
-    padding-left: 0.7rem;
+    padding-left: 0.3rem;
 }
 .links {
     text-align: center;
@@ -92,7 +92,7 @@ a:hover #earth {
     color: orange;
 }
 .skills::first-letter {
-    padding-left: 0.9rem;
+    padding-left: 0.8rem;
 }
 .tel-wrapper, .nick-tg, .e-mail, .linkedin {
     color: rgb(252, 252, 245);
@@ -119,6 +119,9 @@ a:hover #earth {
 @media (min-width: 576px) {
     td {
         padding: 7px calc(7px + .5vw);
+    }
+    td:first-child::first-letter {
+        padding-left: 0.8rem;
     }
     .links { width: 25%; }
 }
