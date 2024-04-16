@@ -30,10 +30,10 @@ table, th, td {
 }
 table {
     color: white;
-    margin: 0 auto;
+    margin: 0 auto 0.35rem auto;
     border-radius: 5px;
 }
-td {
+th, td {
     padding: calc(2.5px + 0.75vw);
 }
 th:first-child {
@@ -48,11 +48,15 @@ tr:last-child td:first-child {
 tr:last-child td:last-child {
     border-bottom-right-radius: 5px;
 }
+td:first-child::first-letter {
+    padding-left: 0.9rem;
+}
 .links {
     text-align: center;
 }
 a {
     color: var(--toxic-green);
+    text-decoration-skip-ink: all;
 }
 a:hover {
     color: var(--light-green);
@@ -87,6 +91,9 @@ a:hover #earth {
 .skills {
     color: orange;
 }
+.skills::first-letter {
+    padding-left: 0.9rem;
+}
 .tel-wrapper, .nick-tg, .e-mail, .linkedin {
     color: rgb(252, 252, 245);
     text-align: center;
@@ -109,7 +116,9 @@ a:hover #earth {
     margin: 0 3px;
 }
 
-@media(min-width: 576px) {
-    td {padding: 7px 10px;}
-    .links {width: 25%;}
+@media (min-width: 576px) {
+    td {
+        padding: 7px calc(7px + .5vw);
+    }
+    .links { width: 25%; }
 }
