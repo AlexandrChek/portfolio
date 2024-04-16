@@ -6,7 +6,7 @@ html {
     -webkit-text-size-adjust: none;
     text-size-adjust: none;
     line-height: 1.2;
-    font-size: clamp(14.5px, calc(10.5px + 1.25vw), 25px);
+    font-size: clamp(14px, calc(10px + 1.27vw), 25px);
 }
 body {
     margin: 15px 8px;
