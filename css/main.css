@@ -60,17 +60,16 @@ a {
 }
 a:hover {
     color: var(--light-green);
+    text-shadow: 0 0 1.5rem rgb(230, 253, 223);
 }
-a:hover img, a:hover p {
+.links a:hover :where(img, p) {
     border-radius: 15px;
+    text-shadow: none;
     box-shadow: 0 0 calc(1rem / 2) calc(1rem / 3) var(--light-green);
 }
-a:hover p {
+.links a:hover p {
     color: black;
     background-color: var(--light-green);
-}
-.links img {
-    max-width: 100%;
 }
 .links p {
     text-align: center;
@@ -110,10 +109,12 @@ a:hover #earth {
     margin-left: 7px;
 }
 .messengers img {
-    height: calc(19px + 1.8vw);
-    max-height: 41px;
-    border-radius: 9px;
+    height: min(calc(19px + 1.8vw), 40px);
     margin: 0 3px;
+}
+#dont-call {
+    border-radius: 50%;
+    margin: 0 calc(1rem / 4);
 }
 
 @media (min-width: 576px) {

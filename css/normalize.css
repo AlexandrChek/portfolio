@@ -18,7 +18,10 @@ p {
 table {
     text-indent: 0;
 }
-a::-moz-focus-inner {
+img {
+    max-width: 100%;
+}
+::-moz-focus-inner {
     border: none;
     padding: 0;
 }

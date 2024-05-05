@@ -48,12 +48,12 @@ skills.textContent = 'I have system thinking, strong analytical skills, good abi
 //MESSENGERS
 
 const messengers = [
-    {picture: 'viber.png', alt: 'Viber'},
-    {picture: 'telegram.png', alt: 'Telegram'},
-    {picture: 'whats_up.png', alt: 'What`s up'},
-    {picture: 'meet.png', alt: 'Meet'},
-    {picture: 'zoom.png', alt:'Zoom'}
+    {picture: 'viber.svg', alt: 'Viber'},
+    {picture: 'telegram.svg', alt: 'Telegram'},
+    {picture: 'whatsapp.svg', alt: 'WhatsApp'},
+    {picture: 'zoom.svg', alt:'Zoom'},
+    {picture: 'meet.svg', alt: 'Meet'}
 ]
 const messengersWrapper = document.querySelector('.messengers')
 messengersWrapper.innerHTML = messengers.map(e => `<img src='./pictures/${e.picture}'alt='${e.alt}'>`).join(' ')
-messengersWrapper.innerHTML += '<div>(not GSM<img src="./pictures/dont_call.jpg" alt="Not GSM">)</div>'
+messengersWrapper.innerHTML += '<div>(not GSM<img src="./pictures/dont_call.jpg" id="dont-call" alt="Not GSM">)</div>'
