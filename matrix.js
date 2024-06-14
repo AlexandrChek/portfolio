@@ -1,23 +1,19 @@
 const matrix = document.querySelector('.matrix')
 const maxHeight = window.innerHeight * 3
 
-let i = 0
-while (i <= window.innerWidth / 16) {
+for (let i = 0; i <= window.innerWidth / 16; i++) {
     let div = document.createElement('div')
     div.className = 'matrix-column'
     matrix.append(div)
-    let n = 0
-    while (n < maxHeight / (15 * 1.5)) {
-        div.textContent += ` ${Math.round(Math.random())}`
-        n++
-    }
-    i++
+
+   for (let n = 0; n < maxHeight / (15 * 1.2); n++) {
+    div.textContent += ` ${Math.round(Math.random())}`
+   }
 }
 
-let time = 0
-let opacity = 1
-const interval = 250
-const fullTime = 3700
+let time = 0, opacity = 1
+const interval = 250, fullTime = 3700
+
 const timer = setInterval(() => {
     matrix.scrollTop += 50
     time += interval

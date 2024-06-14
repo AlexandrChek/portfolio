@@ -1,12 +1,14 @@
 * {
     box-sizing: border-box;
 }
-html {
+:root {
     -moz-text-size-adjust: none;
     -webkit-text-size-adjust: none;
     text-size-adjust: none;
     line-height: 1.2;
     font-size: clamp(14px, calc(10px + 1.27vw), 25px);
+    --toxic-green: rgb(39, 235, 13);
+    --light-green: rgb(128, 253, 97);
 }
 body {
     margin: 15px 8px;
